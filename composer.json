@@ -1,0 +1,21 @@
+{
+    "require": {
+        "geocoder-php/google-maps-provider": "^4.6",
+        "php-http/guzzle6-adapter": "^2.0",
+        "php-http/curl-client": "^2.2",
+        "guzzlehttp/psr7": "^1.7",
+        "php-http/message": "^1.10",
+        "opencage/geocode": "^2.1",
+        "geocoder-php/here-provider": "^0.6.0",
+        "geocoder-php/open-cage-provider": "^4.5",
+      "ext-json": "*",
+      "ext-pgsql": "*",
+        "geocoder-php/ipstack-provider": "^0.3.0",
+        "geocoder-php/arcgis-online-provider": "^4.3",
+        "geocoder-php/bing-maps-provider": "^4.2",
+        "geocoder-php/mapbox-provider": "^1.3",
+        "geocoder-php/geocode-earth-provider": "^1.3",
+        "geocoder-php/geonames-provider": "^4.3",
+        "geocoder-php/mapquest-provider": "^4.2"
+    }
+}
