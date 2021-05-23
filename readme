@@ -13,7 +13,7 @@ elles tels qu'un adaptateur HTTP pour les appels aux API de geocodage, les libra
 
 * Adaptateurs HTTP : permettent d'effectuer une requête HTTP à une API.
 
-* Les providers : Ils permettent l'utilisation des API de geocodage appellées pour l'obtention des coordonnées géographiques. Une liste de tout les providers est trouvable [ici](https://github.com/geocoder-php/Geocoder) 
+* Les providers : Ils permettent l'utilisation des API de geocodage appellées pour l'obtention des coordonnées géographiques. Une liste de tout les providers est trouvable ici : https://github.com/geocoder-php/Geocoder 
 dans la partie "Providers". Pour fonctionner, un provider a besoin d'avoir en paramètres l'adaptateur HTTP choisi pour effectuer les requêtes ainsi qu'une clé ou 
 identifiant API actif permettant l'utilisation de cette dernière.
 
@@ -24,10 +24,10 @@ La librairie Geocoder-php permet justement de renseigner plusieurs API pouvant �
 Cela se passe ligne 108 : 
 
 $result = $geocoder
-        *->using(_'map_quest'_) // google_maps ; opencage ; Here ; ipstack ; arcgis_online ; bing_maps ; mapbox ; geocode_earth ; geonames ; map_quest*
+        ->using('map_quest') // google_maps ; opencage ; Here ; ipstack ; arcgis_online ; bing_maps ; mapbox ; geocode_earth ; geonames ; map_quest
         ->geocode($adresse);
 
-Le "nom d'utilisation" de chaque providers ajouté est en commentaire, il suffis de mettre l'un d'eux dans les paramètres du *->using('nomProvider')* pour pouvoir l'utiliser.
+Le "nom d'utilisation" de chaque providers ajouté est en commentaire, il suffis de mettre l'un d'eux dans les paramètres du ->using('nomProvider') pour pouvoir l'utiliser.
 
 ----------------
 
