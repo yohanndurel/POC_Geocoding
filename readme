@@ -4,7 +4,7 @@ du domicile de candidats à partir d'adresses postales.
 Ce script permet le géocodage d'adresses provenant d'une base de données hébergée sous PostgreSQL dans un conteneur Docker, dans le cas de ce POC, le conteneur,
 la base de données et le script étaient sur un réseau local.
 
-------
+----------------
 
 Ce script utilise un certain nombre de librairies PHP gérées par Composer. Afin de les installer, utilisez la commande `composer install`, puis `composer update`.
 * Geocoder-php : représente le socle du script, il apporte la possibilité de réaliser du géocodage en PHP. Il permet aussi le fonctionnement de librairies suplémentaire entre
@@ -14,7 +14,7 @@ elles tels qu'un adaptateur HTTP pour les appels aux API de geocodage, les libra
 dans la partie "Providers". Pour fonctionner, un provider a besoin d'avoir en paramètres l'adaptateur HTTP choisi pour effectuer les requêtes ainsi qu'une clé ou 
 identifiant API actif permettant l'utilisation de cette dernière.
 
-------
+----------------
 
 Parmis les contraintes du cahier des charges, l'une d'entre elles est de pouvoir changer d'API de géocoding à tout moment sans avoir besoin de modifier trop de code.
 La librairie Geocoder-php permet justement de renseigner plusieurs API pouvant être utilisée, l'utilisateur n'a plus qu'à choisir laquelle il souhaite appeller.
@@ -26,7 +26,7 @@ $result = $geocoder
 
 Le "nom d'utilisation" de chaque providers ajouté est en commentaire, il suffis de mettre l'un d'eux dans les paramètres du *->using('nomProvider')* pour pouvoir l'utiliser.
 
-------
+----------------
 
 Le résultat est retourné sous la forme d'un fichier JSON. Geocoder-php permet de récupérer simplement les informations nécessaire grâce à une fonction `getCoordinates()`.
 Ces informations peuvent ensuite être affichées et/ou enregistrées dans la base de données.
@@ -34,6 +34,6 @@ Ces informations peuvent ensuite être affichées et/ou enregistrées dans la ba
 Dans l'optique de déterminer quelle API est la plus efficace, un conteur d'erreurs a été ajouté permettant ainsi, pour une liste d'adresses postale identique d'une API à l'autre, 
 de déterminer le nombre d'erreurs renvoyé lors de l'execution du script. 
 
-------
+----------------
 
 Du parallel processing a été envisagé pour rendre l'execution du script encore plus rapide, mais cela n'a pas été concluant. Le code relatif à ces essais est en commentaire.
