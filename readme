@@ -7,9 +7,12 @@ la base de données et le script étaient sur un réseau local.
 ----------------
 
 Ce script utilise un certain nombre de librairies PHP gérées par Composer. Afin de les installer, utilisez la commande `composer install`, puis `composer update`.
+
 * Geocoder-php : représente le socle du script, il apporte la possibilité de réaliser du géocodage en PHP. Il permet aussi le fonctionnement de librairies suplémentaire entre
 elles tels qu'un adaptateur HTTP pour les appels aux API de geocodage, les librairies permettantt l'utilisation de ces API (appellés Providers).
-* Adaptateurs HTTP : permettent d'effectuer une requête HTTP à une API
+
+* Adaptateurs HTTP : permettent d'effectuer une requête HTTP à une API.
+
 * Les providers : Ils permettent l'utilisation des API de geocodage appellées pour l'obtention des coordonnées géographiques. Une liste de tout les providers est trouvable [ici](https://github.com/geocoder-php/Geocoder) 
 dans la partie "Providers". Pour fonctionner, un provider a besoin d'avoir en paramètres l'adaptateur HTTP choisi pour effectuer les requêtes ainsi qu'une clé ou 
 identifiant API actif permettant l'utilisation de cette dernière.
