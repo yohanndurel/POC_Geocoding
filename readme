@@ -27,7 +27,8 @@ $result = $geocoder
         ->using('map_quest') // google_maps ; opencage ; Here ; ipstack ; arcgis_online ; bing_maps ; mapbox ; geocode_earth ; geonames ; map_quest
         ->geocode($adresse);
 
-Le "nom d'utilisation" de chaque providers ajouté est en commentaire, il suffis de mettre l'un d'eux dans les paramètres du ->using('nomProvider') pour pouvoir l'utiliser.
+Le "nom d'utilisation" de chaque providers ajouté est en commentaire, il suffis de mettre l'un d'eux dans les paramètres du 
+->using('nomProvider') pour pouvoir l'utiliser.
 
 ----------------
 
